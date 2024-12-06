@@ -2,15 +2,30 @@
 
 This project is a **Machine Learning application** developed using Natural Language Processing (NLP) and Machine Learning techniques to classify emails as **Spam** or **Not Spam (Ham)**. The application provides an interactive web interface using **Streamlit** for real-time email classification.
 
+---
+
 ## Table of Contents
 - [Overview](#overview)
 - [Technologies Used](#technologies-used)
 - [Features](#features)
 - [Setup and Installation](#setup-and-installation)
+  - [1. Clone the Repository](#1-clone-the-repository)
+  - [2. Create a Virtual Environment](#2-create-a-virtual-environment)
+  - [3. Install Dependencies](#3-install-dependencies)
+  - [4. Train the Model (Optional)](#4-train-the-model-optional)
+  - [5. Run the Application](#5-run-the-application)
+  - [6. Open the Web App](#6-open-the-web-app)
 - [How to Use](#how-to-use)
 - [Project Demo](#project-demo)
+- [Model Training Details](#model-training-details)
+  - [Text Preprocessing](#text-preprocessing)
+  - [Vectorization](#vectorization)
+  - [Model](#model)
+  - [Performance Metrics](#performance-metrics)
 - [Directory Structure](#directory-structure)
 - [Future Enhancements](#future-enhancements)
+- [Challenges Faced](#challenges-faced)
+- [Acknowledgements](#acknowledgements)
 - [License](#license)
 
 ---
@@ -48,88 +63,6 @@ Follow these steps to run the project locally:
 
 ### 1. Clone the Repository
 
-
+```bash
 git clone https://github.com/AbdulSarban/P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning.git
 cd P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning
----
-### 2. Create a Virtual Environment (Recommended)
-
-# Windows
-python -m venv venv
-venv\Scripts\activate
-
-# macOS/Linux
-python3 -m venv venv
-source venv/bin/activate
----
-### 3. Install Dependencies
-
-pip install -r requirements.txt
----
-
-### 4. Train the Model (Optional)
-To train the model yourself, run:
-python train_model.py
----
-
-### 5. Run the Application
-Start the Streamlit app:
-
-streamlit run spamDetector.py
----
-
-### 6. Open the Web App
-Visit the URL provided in the terminal (e.g., http://localhost:8501) to interact with the application.
-
-How to Use
-Launch the Streamlit app.
-Enter email text in the provided input box.
-Click the "Classify" button to classify the email.
-View the result displayed as "Spam" or "Ham."
-Project Demo
-
-Model Training Details
-Text Preprocessing:
-Tokenization and removal of punctuation.
-Conversion to lowercase.
-Stopword removal.
-Vectorization:
-Used CountVectorizer for bag-of-words representation.
-Model: Trained using Multinomial Naive Bayes for high performance on text classification tasks.
-Performance Metrics: Achieved an accuracy of ~98% on the test dataset.
-
-
-Directory Structure
-
-P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning/
-│
-├── spamDetector.py             # Main application script
-├── train_model.py              # Script for training the model
-├── spam.pkl                    # Pre-trained machine learning model
-├── vectorizer.pkl              # Pre-trained CountVectorizer
-├── requirements.txt            # List of dependencies
-├── README.md                   # Project documentation
-├── screenshot.png              # Screenshot of the web interface
-└── spam.csv                    # Dataset used for training
-Future Enhancements
-
-
-Deployment: Host the app on platforms like Heroku or AWS for broader accessibility.
-Multilingual Support: Extend the classification to handle multiple languages.
-Advanced Models: Incorporate deep learning models for improved accuracy.
-Explainability: Add visualizations to explain model decisions.
-User Authentication: Implement user logins to save classification history.
----
-### Challenges Faced
-Model Overfitting: Resolved using cross-validation and hyperparameter tuning.
-Text Preprocessing: Dealt with removing noisy data and handling special characters.
-Real-time Predictions: Ensured low latency while maintaining accuracy.
-
-
-### Acknowledgements
-Scikit-learn Documentation
-Streamlit Tutorials
-
-
-```bash
-
