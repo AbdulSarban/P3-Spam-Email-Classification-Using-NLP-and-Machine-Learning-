@@ -97,9 +97,9 @@ Vectorization:
 Used CountVectorizer for bag-of-words representation.
 Model: Trained using Multinomial Naive Bayes for high performance on text classification tasks.
 Performance Metrics: Achieved an accuracy of ~98% on the test dataset.
----
 
-### Directory Structure
+
+Directory Structure
 
 P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning/
 │
@@ -112,9 +112,9 @@ P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning/
 ├── screenshot.png              # Screenshot of the web interface
 └── spam.csv                    # Dataset used for training
 Future Enhancements
----
 
-### Deployment: Host the app on platforms like Heroku or AWS for broader accessibility.
+
+Deployment: Host the app on platforms like Heroku or AWS for broader accessibility.
 Multilingual Support: Extend the classification to handle multiple languages.
 Advanced Models: Incorporate deep learning models for improved accuracy.
 Explainability: Add visualizations to explain model decisions.
@@ -124,12 +124,12 @@ User Authentication: Implement user logins to save classification history.
 Model Overfitting: Resolved using cross-validation and hyperparameter tuning.
 Text Preprocessing: Dealt with removing noisy data and handling special characters.
 Real-time Predictions: Ensured low latency while maintaining accuracy.
----
+
 
 ### Acknowledgements
 Scikit-learn Documentation
 Streamlit Tutorials
----
+
 
 ```bash
 
