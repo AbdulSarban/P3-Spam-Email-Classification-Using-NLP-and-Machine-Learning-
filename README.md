@@ -48,13 +48,12 @@ Follow these steps to run the project locally:
 
 ### 1. Clone the Repository
 
-```bash
+
 git clone https://github.com/AbdulSarban/P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning.git
 cd P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning
+---
+### 2. Create a Virtual Environment (Recommended)
 
-2. Create a Virtual Environment (Recommended)
-bash
-Copy code
 # Windows
 python -m venv venv
 venv\Scripts\activate
@@ -62,23 +61,24 @@ venv\Scripts\activate
 # macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
-3. Install Dependencies
-bash
-Copy code
-pip install -r requirements.txt
-4. Train the Model (Optional)
-To train the model yourself, run:
+---
+### 3. Install Dependencies
 
-bash
-Copy code
+pip install -r requirements.txt
+---
+
+### 4. Train the Model (Optional)
+To train the model yourself, run:
 python train_model.py
-5. Run the Application
+---
+
+### 5. Run the Application
 Start the Streamlit app:
 
-bash
-Copy code
 streamlit run spamDetector.py
-6. Open the Web App
+---
+
+### 6. Open the Web App
 Visit the URL provided in the terminal (e.g., http://localhost:8501) to interact with the application.
 
 How to Use
@@ -97,9 +97,10 @@ Vectorization:
 Used CountVectorizer for bag-of-words representation.
 Model: Trained using Multinomial Naive Bayes for high performance on text classification tasks.
 Performance Metrics: Achieved an accuracy of ~98% on the test dataset.
-Directory Structure
-bash
-Copy code
+---
+
+### Directory Structure
+
 P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning/
 │
 ├── spamDetector.py             # Main application script
@@ -111,16 +112,24 @@ P3-Spam-Email-Classification-Using-NLP-and-Machine-Learning/
 ├── screenshot.png              # Screenshot of the web interface
 └── spam.csv                    # Dataset used for training
 Future Enhancements
-Deployment: Host the app on platforms like Heroku or AWS for broader accessibility.
+---
+
+### Deployment: Host the app on platforms like Heroku or AWS for broader accessibility.
 Multilingual Support: Extend the classification to handle multiple languages.
 Advanced Models: Incorporate deep learning models for improved accuracy.
 Explainability: Add visualizations to explain model decisions.
 User Authentication: Implement user logins to save classification history.
-Challenges Faced
+---
+### Challenges Faced
 Model Overfitting: Resolved using cross-validation and hyperparameter tuning.
 Text Preprocessing: Dealt with removing noisy data and handling special characters.
 Real-time Predictions: Ensured low latency while maintaining accuracy.
-Acknowledgements
+---
+
+### Acknowledgements
 Scikit-learn Documentation
 Streamlit Tutorials
+---
+
+```bash
 
