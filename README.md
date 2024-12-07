@@ -109,7 +109,8 @@ Visit the URL provided in the terminal (e.g., http://localhost:8501) to interact
 
 ## Project Demo
 
-Add a screenshot or demo GIF of your app in action here:
+![Screenshot 2024-12-07 011839](https://github.com/user-attachments/assets/11b7c9a0-4446-4f94-832f-f8ced42a8182)
+
 
 ---
 
